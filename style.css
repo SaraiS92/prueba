@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 /* Menú de navegación */
 nav {
     background: #4caf50;
@@ -12,36 +11,29 @@ nav {
     position: sticky;
     top: 0;
 }
-
 nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
 }
-
 nav a:hover {
     text-decoration: underline;
 }
-
 /* Secciones */
 section {
     padding: 60px 20px;
     text-align: center;
 }
-
 #inicio {
     background: #f0f8ff;
 }
-
 #servicios {
     background: #fff3e6;
 }
-
 #contacto {
     background: #f9f9f9;
 }
-
 /* Formularios */
 form {
     display: flex;
@@ -50,14 +42,12 @@ form {
     margin: 20px auto;
     gap: 10px;
 }
-
 input, textarea {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 button {
     padding: 12px;
     background: #4caf50;
@@ -66,7 +56,6 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-
 button:hover {
     background: #45a049;
 }
@@ -81,21 +70,19 @@ button:hover {
   text-align: center;
   font-size: 14px;
   z-index: 1000;
+  display: none;
 }
-
 #cookie-banner button {
   background: #4caf50;
   color: white;
   border: none;
   padding: 8px 15px;
-  margin-left: 10px;
+  margin: 5px;
   cursor: pointer;
   border-radius: 5px;
 }
-
-#cookie-banner a {
-  color: #4caf50;
-  text-decoration: underline;
+#cookie-banner button:nth-child(2) {
+  background: #d9534f; /* rojo para rechazar */
 }
 /* Footer */
 footer {
@@ -104,4 +91,5 @@ footer {
     text-align: center;
     padding: 15px;
 }
+
 
