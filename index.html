@@ -4,25 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Sitio de Prueba</title>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M5QNF9G6');</script>
-<!-- End Google Tag Manager -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5QNF9G6"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <h1>¡Hola, mundo!</h1>
-    <p>Este es mi sitio de prueba.</p>
-    <button onclick="saludar()">Haz clic aquí</button>
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio">
+        <h1>¡Bienvenido a mi sitio de prueba!</h1>
+        <p>Este sitio fue creado para practicar HTML, CSS y JavaScript.</p>
+        <button onclick="saludar()">Haz clic aquí</button>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios">
+        <h2>Mis Servicios</h2>
+        <ul>
+            <li>✅ Desarrollo de sitios web básicos</li>
+            <li>✅ Pruebas de diseño con HTML y CSS</li>
+            <li>✅ Integración de JavaScript</li>
+        </ul>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Quieres saber más? Envíame un mensaje 😊</p>
+        <form>
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo" required>
+            <textarea placeholder="Escribe tu mensaje..." required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 - Sitio de Sarai</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
