@@ -42,5 +42,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5QNF9G6"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+    <!-- Banner de Cookies -->
+<div id="cookie-banner">
+  <p>
+    Usamos cookies para mejorar tu experiencia y analizar el uso del sitio. 
+    <a href="cookies.html">Leer más</a>
+  </p>
+  <button id="aceptarCookies">Aceptar</button>
+  <button id="rechazarCookies">Rechazar</button>
+</div>
+
+<script>
+  function setConsent(valor) {
+    localStorage.setItem("cookie-consent", valor);
+    document.getElementById("cookie-banner").style.display = "none";
+    
+    // Dispara un evento que GTM puede escuchar
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'event': 'cookie_consent',
+      'consent': valor
+    });
+  }
+
+  document.getElementById("aceptarCookies").addEventListener("click", function() {
+    setConsent("granted"); // aceptado
+  });
+
+  document.getElementById("rechazarCookies").addEventListener("click", function() {
+    setConsent("denied"); // rechazado
+  });
+
+  // Mostrar banner si el usuario no ha decidido todavía
+  window.onload = function() {
+    if (!localStorage.getItem("cookie-consent")) {
+      document.getElementById("cookie-banner").style.display = "block";
+    } else {
+      document.getElementById("cookie-banner").style.display = "none";
+    }
+  };
+</script>
 </body>
 </html>
